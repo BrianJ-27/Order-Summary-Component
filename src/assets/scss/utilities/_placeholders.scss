@@ -15,13 +15,12 @@
 
 %btn-properties {
   outline: none;
-  border: 3px solid v.$color-main;
   border-radius: v.$moderate-curve;
   color: v.$white;
   letter-spacing: 1px;
   background: v.$color-main;
   font-size: 0.75rem;
   font-weight: v.$font-weight-bold;
-  padding: 0.8rem;
+  padding: 1rem;
   width: 100%;
 }

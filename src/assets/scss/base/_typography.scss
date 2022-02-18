@@ -40,6 +40,10 @@
 }
 
 .content__link {
+  color: $color-main;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .card__cancel--link {
@@ -48,4 +52,9 @@
   text-decoration: none;
   font-weight: $font-weight-bold;
   color: $color-text-base;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $color-text-dark;
+    font-weight: $font-weight-bolder;
+  }
 }
