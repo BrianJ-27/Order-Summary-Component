@@ -2,12 +2,6 @@
 // Placeholders
 // **************************************
 @use "./variables" as v;
-@use "./mixins" as *;
-
-%nav-link {
-  text-decoration: none;
-  color: v.$color-main;
-}
 
 %ctr-text {
   text-align: center;
