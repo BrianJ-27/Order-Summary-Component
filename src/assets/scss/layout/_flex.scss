@@ -1,0 +1,10 @@
+// **************************************
+// FLEX STYLES
+// **************************************
+
+@use "../utilities" as *;
+
+//flex styles
+.flex__container {
+  @include flex_me($just: space-between);
+}

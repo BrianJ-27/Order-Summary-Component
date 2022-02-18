@@ -5,22 +5,23 @@
 
 //h1 styles
 .title__primary {
-  @include text-prop(
-    $size: 1.5rem,
-    $f-weight: $font-weight-bolder,
-    $color: $color-text-dark
-  );
+  @include text-prop($size: 1.5rem);
   @extend %ctr-text;
 }
 
 //content styles
 .content {
   @extend %ctr-text;
-  @include text-prop($size: 0.9rem, $l-height: 1.6, $color: $color-text-base);
+  @include text-prop($size: 0.9rem, $l-height: 1.6);
+}
+
+.title__primary,
+.card__cancel--link:hover {
+  font-weight: $font-weight-bolder;
+  color: $color-text-dark;
 }
 
 .title__plan {
-  font-weight: $font-weight-bold;
   font-size: 0.95rem;
 }
 
@@ -35,8 +36,15 @@
   font-size: 0.85rem;
 }
 
-.content__plan {
+.content,
+.content__plan,
+.card__cancel--link {
   color: $color-text-base;
+}
+
+.title__plan,
+.card__cancel--link {
+  font-weight: $font-weight-bold;
 }
 
 .content__link {
@@ -48,13 +56,6 @@
 
 .card__cancel--link {
   margin: 1.2rem 0 2rem;
-  display: inline-block;
   text-decoration: none;
-  font-weight: $font-weight-bold;
-  color: $color-text-base;
   transition: all 0.3s ease-in-out;
-  &:hover {
-    color: $color-text-dark;
-    font-weight: $font-weight-bolder;
-  }
 }

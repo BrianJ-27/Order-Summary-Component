@@ -11,9 +11,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  // background: #000 !important;
-  // color: #0f0 !important;
-  // outline: solid #f00 1px !important;
 }
 
 html,
@@ -35,11 +32,6 @@ body {
   }
 }
 
-main {
-  display: grid;
-  place-content: center;
-}
-
 svg,
 img {
   display: block;
@@ -47,7 +39,8 @@ img {
   height: auto;
 }
 
-p {
+p,
+footer {
   color: u.$color-text-dark;
 }
 
@@ -57,7 +50,6 @@ a {
 }
 
 footer {
-  color: u.$color-text-dark;
   @extend %ctr-text;
 }
 
