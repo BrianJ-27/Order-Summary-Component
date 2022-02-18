@@ -1,38 +1,42 @@
 import React from "react";
-import { ReactComponent as HeroImg } from "../../assets/images/illustration-hero.svg";
-
+import HeroImg from "../../assets/images/illustration-hero.svg";
+import MusicImg from "../../assets/images/icon-music.svg";
 const Card = () => {
   return (
     <React.Fragment>
       <article className="card">
-        <div className="card__header bottom__space">
+        <div className="card__header">
           <figure className="card__figure">
-            <HeroImg alt="Hero Image" />
+            <img src={HeroImg} alt="Hero Pic" />
           </figure>
         </div>
 
-        <div className="card__body bottom__space">
-          <h1 className="card__title white ease__in finger__pointer bottom__space">
-            Order Summary
-          </h1>
-          <p className="card__copy bottom__space">
-            You can now listento millions of songs, audiobooks, and podcasts on
-            any device anwhere you like&#33;
+        <div className="card__body">
+          <h1 className="title__primary">Order Summary</h1>
+          <p className="card__copy content">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like&#33;
           </p>
-          <div className="card__plan flex__use">
-            <img src="" alt="" />
-            <p>Annual Plan</p>
-            <p>$59.99/year</p>
-            <a href="#id">Change</a>
+          <div className="card__plan">
+            <img src={MusicImg} alt="" className="img__music" />
+            <div className="card__feature">
+              <p className="title__plan">Annual Plan</p>
+              <p className="content__plan">$59.99/year</p>
+            </div>
+            <a className="content__link" href="#id">
+              Change
+            </a>
           </div>
         </div>
         <footer className="card__footer">
           <div>
-            <button type="submit" className="">
+            <button type="submit" className="btn__overlay--full">
               Proceed to Payment
             </button>
             <div>
-              <a href="#cancel">Cancel Order</a>
+              <a className="card__cancel--link" href="#cancel">
+                Cancel Order
+              </a>
             </div>
           </div>
         </footer>

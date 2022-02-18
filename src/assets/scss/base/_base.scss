@@ -3,18 +3,48 @@
 // **************************************
 
 @use "../utilities/variables" as u;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
   // background: #000 !important;
   // color: #0f0 !important;
   // outline: solid #f00 1px !important;
 }
 
+html,
+body,
+#root,
+.container {
+  min-height: 100vh;
+}
+
 body {
-  font-family: u.$font-stack-main;
-  line-height: 1;
-  font-size: 1rem;
-  background-color: u.$color-bg;
+  font: u.$font-weight-normal 1rem/1.4 u.$font-stack-main;
+  background: u.$color-bg url(../../images/pattern-background-mobile.svg)
+    no-repeat 0px -450px;
+  background-size: cover;
+  @include mq("md") {
+    background-image: url(../../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-position: 0px 0px;
+  }
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+svg,
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 p {
@@ -27,15 +57,11 @@ a {
 }
 
 footer {
-  height: u.$footer-height;
-  color: u.$color-text-light;
+  color: u.$color-text-dark;
+  @extend %ctr-text;
 }
 
 /*-----HEADINGS------*/
-h1,
-h2,
-h3,
-h4,
-h6 {
+h1 {
   font-family: u.$font-stack-main;
 }

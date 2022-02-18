@@ -1,9 +1,10 @@
+import React from "react";
 import OrderSummary from "./components/order-summary/order-summary";
 import Card from "./components/card/card";
 function App() {
   return (
-    <div className="App">
-      <main className="App-header">
+    <React.Fragment>
+      <main className="container">
         <Card />
       </main>
       <footer className="attribution">
@@ -17,7 +18,7 @@ function App() {
         </a>
         &nbsp; Coded by <a href="https://brianbjohnson.net/">Brian Johnson</a>.
       </footer>
-    </div>
+    </React.Fragment>
   );
 }
 

@@ -24,7 +24,7 @@ $color-card-bg: $white;
 $color-link-default: $color-main;
 
 //Headings & Paragraph Colors
-$color-text-light: $white;
+$color-text-light: $pale-blue;
 $color-text-base: $desaturated-blue;
 $color-text-dark: $color-main-dark;
 
@@ -38,7 +38,7 @@ $header-height: 600px;
 $footer-height: 100px;
 
 //Font Stacks
-@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 $font-stack-main: "Red Hat Display", sans-serif;
 $base-font-size: 16px;
 $font-weight-normal: 500;

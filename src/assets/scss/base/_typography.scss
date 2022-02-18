@@ -2,51 +2,50 @@
 // TYPOGRAPHY STYLES
 // **************************************
 @use "../utilities" as *;
+
 //h1 styles
 .title__primary {
-  @include text-prop($size: 1.28em, $f-weight: 400, $color: $color-text-base);
-  @extend %text-modules;
-  @include mq("md") {
-    @include text-prop($size: 1.8em, $f-weight: 500);
-  }
-  @include mq("lg") {
-    @include text-prop($size: 1.1em);
-    text-align: center;
-  }
-}
-
-//h2 styles
-.title__secondary {
-  @include text-prop($size: 1.5em, $f-weight: 500);
-  @extend %text-modules;
-  @include mq("md") {
-    @include text-prop($size: 1.3em, $l-height: 1.5);
-  }
-  @include mq("lg") {
-    @include text-prop($size: 1.6em);
-  }
-}
-
-//h3 Styles
-
-.title__tertiary {
-  @include text-prop($size: 1.4em);
-}
-
-/*----CONTEXT STYLES----*/
-
-.content__banner {
-  padding: 0 0 0.5em 0.5em;
-  @include text-prop($size: 1em, $f-weight: 800, $color: $color-text-light);
-  text-align: center;
-  @include mq("md") {
-    @include text-prop($size: 1.4em, $f-weight: bold);
-  }
-  @include mq("lg") {
-    @include text-prop($size: 1.8em, $f-weight: 900);
-  }
+  @include text-prop(
+    $size: 1.5rem,
+    $f-weight: $font-weight-bolder,
+    $color: $color-text-dark
+  );
+  @extend %ctr-text;
 }
 
 //content styles
 .content {
+  @extend %ctr-text;
+  @include text-prop($size: 0.9rem, $l-height: 1.6, $color: $color-text-base);
+}
+
+.title__plan {
+  font-weight: $font-weight-bold;
+  font-size: 0.95rem;
+}
+
+.title__plan,
+.content__plan {
+  margin-left: -25px;
+}
+
+.content__plan,
+.content__link,
+.card__cancel--link {
+  font-size: 0.85rem;
+}
+
+.content__plan {
+  color: $color-text-base;
+}
+
+.content__link {
+}
+
+.card__cancel--link {
+  margin: 1.2rem 0 2rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+  color: $color-text-base;
 }

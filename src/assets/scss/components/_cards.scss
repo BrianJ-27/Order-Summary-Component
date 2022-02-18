@@ -1,0 +1,30 @@
+// **************************************
+// CARD STYLES
+// **************************************
+
+@use "../utilities/variables" as u;
+
+.card,
+.card__plan {
+  border-radius: u.$moderate-curve;
+}
+
+.card {
+  background-color: u.$white;
+  max-width: 350px;
+  overflow: hidden;
+}
+
+.card__body,
+.card__footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__plan {
+  background-color: u.$color-main-lightest;
+  margin: 1.5rem 0;
+  padding: 1rem 0.5rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
