@@ -1,20 +1,12 @@
+import OrderSummary from "./components/order-summary/order-summary";
+import Card from "./components/card/card";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div className="attribution">
+      <main className="App-header">
+        <Card />
+      </main>
+      <footer className="attribution">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
@@ -24,7 +16,7 @@ function App() {
           Frontend Mentor
         </a>
         &nbsp; Coded by <a href="https://brianbjohnson.net/">Brian Johnson</a>.
-      </div>
+      </footer>
     </div>
   );
 }
