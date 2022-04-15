@@ -17,8 +17,8 @@
 
 .card__body,
 .card__footer {
-  width: 80%;
-  margin: 0 auto;
+  width: calc(100% - 2.5rem);
+  margin-inline: auto;
 }
 
 .card__plan {

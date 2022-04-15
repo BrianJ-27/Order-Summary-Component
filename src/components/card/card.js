@@ -5,28 +5,26 @@ import Button from "../button/button";
 
 const Card = () => {
   return (
-    <React.Fragment>
-      <article className="card">
-        <div className="card__header">
-          <HeroImage />
-        </div>
+    <article className="card">
+      <div className="card__header">
+        <HeroImage />
+      </div>
 
-        <div className="card__body">
-          <OrderSummary />
-        </div>
+      <div className="card__body">
+        <OrderSummary />
+      </div>
 
-        <footer className="card__footer">
+      <footer className="card__footer">
+        <div>
+          <Button />
           <div>
-            <Button />
-            <div>
-              <a className="card__cancel--link" href="#cancel">
-                Cancel Order
-              </a>
-            </div>
+            <a className="card__cancel--link" href="#cancel">
+              Cancel Order
+            </a>
           </div>
-        </footer>
-      </article>
-    </React.Fragment>
+        </div>
+      </footer>
+    </article>
   );
 };
 

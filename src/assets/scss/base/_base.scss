@@ -8,19 +8,10 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-html,
-body,
-#root,
-.container {
-  min-height: 100vh;
 }
 
 body {
+  padding: 1rem;
   font: u.$font-weight-normal 1rem/1.4 u.$font-stack-main;
   background: u.$color-bg url(../../images/pattern-background-mobile.svg)
     no-repeat 0px -450px;
@@ -56,4 +47,5 @@ footer {
 /*-----HEADINGS------*/
 h1 {
   font-family: u.$font-stack-main;
+  margin: 1rem 0;
 }
